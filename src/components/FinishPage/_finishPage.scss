@@ -1,15 +1,72 @@
-:root {
-  --color-white: #ffffff;
-  --color-text: #333333;
-  --color-p: #a6a6a6;
-  --color-price: #000000;
-  --color-button: #cbcbcb;
-  --color-green: #32b72f;
+.tela {
+  height: 100%;
+  width: 100%;
 
-  --font-tittle: 400 2.75rem "Righteous", cursive;
-  --font-text: 400 1.125rem "Roboto", sans-serif;
-  --font-name: 700 1rem "Roboto", sans-serif;
-  --font-description: 300 0.9375rem "Roboto", sans-serif;
-  --font-divider: 400 1.625rem "Righteous", cursive;
-  --font-button: 400 1.25rem "Roboto", sans-serif;
+  background-color: rgba(255, 255, 255, 0.9);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  z-index: 4;
+}
+
+.tela .confirm {
+  height: 33.33%;
+  width: 85.3%;
+  border-radius: 9px;
+  padding: 1.31rem 1.6rem 0 1.6rem;
+
+  font: var(--font-name);
+  color: var(--color-white);
+
+  background: #50d074;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+}
+
+.tela .confirm .header {
+  font-size: 1.375rem;
+  font-weight: normal;
+
+  text-align: center;
+}
+
+.button-1,
+.button-2 {
+  display: flex;
+  justify-content: center;
+}
+
+.tela .confirm .ok {
+  width: 79.66%;
+  height: 3.25rem;
+  margin-top: 1.5rem;
+  border-radius: 100px;
+  border: none;
+  background: #ffffff;
+
+  font: var(--font-name);
+  font-size: 1.375rem;
+  font-weight: normal;
+  color: #50d074;
+}
+
+.tela .confirm .cancel {
+  margin-top: 0.5rem;
+
+  font: var(--font-name);
+  color: var(--color-white);
+  border: none;
+  background-color: #50d074;
+}
+
+.tela {
+  visibility: hidden;
+}
+
+.show {
+  visibility: visible;
 }

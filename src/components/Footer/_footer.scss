@@ -28,4 +28,20 @@
       visibility: hidden;
     }
   }
+
+  .finished {
+    background-color: var(--color-green);
+
+    .footer__button__text {
+      display: none;
+    }
+
+    .footer__button__finish {
+      visibility: visible;
+
+      font: var(--font-name);
+      font-size: 1.25rem;
+      color: var(--color-white);
+    }
+  }
 }

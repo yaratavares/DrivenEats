@@ -1,0 +1,24 @@
+:root {
+  --color-white: #ffffff;
+  --color-text: #333333;
+  --color-p: #a6a6a6;
+  --color-price: #000000;
+  --color-button: #cbcbcb;
+  --color-green: #32b72f;
+
+  --font-tittle: 400 2.75rem "Righteous", cursive;
+  --font-text: 400 1.125rem "Roboto", sans-serif;
+  --font-name: 700 1rem "Roboto", sans-serif;
+  --font-description: 300 0.9375rem "Roboto", sans-serif;
+  --font-divider: 400 1.625rem "Righteous", cursive;
+  --font-button: 400 1.25rem "Roboto", sans-serif;
+}
+
+main {
+  background-color: #e5e5e5;
+  padding: 6rem 0 6.75rem 1.2rem;
+}
+
+@import "../../components/Header/header", "../../components/Footer/footer",
+  "../../components/FinishPage/finishPage",
+  "../../components/ChoicesPage/choicesPage";

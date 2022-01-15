@@ -6,9 +6,7 @@ section {
     color: var(--color-text);
   }
 
-  .list-product-1,
-  .list-product-2,
-  .list-product-3 {
+  .list-product {
     display: flex;
     overflow-x: scroll;
   }
@@ -22,6 +20,8 @@ section {
 
     background-color: var(--color-white);
     box-shadow: 0px 0px 10px -4px #00000040;
+
+    position: relative;
 
     .name {
       margin-top: 0.32rem;
@@ -51,6 +51,19 @@ section {
 
     ion-icon {
       visibility: hidden;
+    }
+  }
+  .select {
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25),
+      inset 0px 0px 0px 5px var(--color-green);
+
+    ion-icon {
+      visibility: visible;
+      color: var(--color-green);
+
+      position: absolute;
+      bottom: 1rem;
+      right: 0.8125rem;
     }
   }
 }
