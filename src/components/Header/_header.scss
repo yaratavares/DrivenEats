@@ -1,0 +1,26 @@
+$backgroundRed: #cf2b2b;
+$textColor: white;
+
+.header {
+  width: 100%;
+  height: 5.75rem;
+  padding: 0.5rem 0 0 1.3125rem;
+  color: $textColor;
+
+  background-color: $backgroundRed;
+  box-shadow: 0px 4px 4px 0px #00000040;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  z-index: 3;
+
+  &__logo {
+    font: 400 2.75rem "Righteous", cursive;
+  }
+
+  &__subtittle {
+    font: 400 1.125rem "Roboto", sans-serif;
+  }
+}

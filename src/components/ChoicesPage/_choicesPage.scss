@@ -1,0 +1,56 @@
+section {
+  margin-top: 1.7rem;
+
+  .divider {
+    font: var(--font-divider);
+    color: var(--color-text);
+  }
+
+  .list-product-1,
+  .list-product-2,
+  .list-product-3 {
+    display: flex;
+    overflow-x: scroll;
+  }
+
+  .product {
+    width: 10.75rem;
+    height: 13.5rem;
+    margin: 1rem 1rem 0 0;
+    padding: 1rem 0.875rem;
+    border-radius: 9px;
+
+    background-color: var(--color-white);
+    box-shadow: 0px 0px 10px -4px #00000040;
+
+    .name {
+      margin-top: 0.32rem;
+      font: var(--font-name);
+      color: var(--color-text);
+    }
+
+    .description {
+      margin-top: 0.32rem;
+      font: var(--font-description);
+      color: var(--color-p);
+    }
+
+    .price {
+      margin-top: 0.32rem;
+      font: var(--font-name);
+      color: var(--color-price);
+      font-weight: normal;
+    }
+
+    div {
+      height: 6rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    ion-icon {
+      visibility: hidden;
+    }
+  }
+}
