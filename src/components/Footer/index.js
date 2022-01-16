@@ -1,11 +1,11 @@
 import { useContext, useEffect, useState } from "react";
-import { useNavigate } from "react-router";
+import { ConfirmOrder } from "../../common/context/ConfirmOrder";
 import { Order } from "../../common/context/Order";
 
 export default function Footer() {
   const { order } = useContext(Order);
+  const { setConfirmOrder } = useContext(ConfirmOrder);
   const [finish, setFinish] = useState(false);
-  const navigate = useNavigate();
 
   useEffect(() => {
     if (order.plate.order && order.drink.order && order.deserve.order) {
@@ -14,7 +14,7 @@ export default function Footer() {
   }, [order]);
 
   function changePage() {
-    navigate("/confirm");
+    setConfirmOrder(true);
   }
 
   return (

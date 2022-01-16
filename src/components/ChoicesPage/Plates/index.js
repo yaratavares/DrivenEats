@@ -33,7 +33,7 @@ export default function Plates({
       <img src={plate.image} alt={`prato ${plate.name}`} />
       <p className="box__product__name">{plate.name}</p>
       <p className="box__product__description">{plate.description}</p>
-      <p className="box__product__price">{plate.price}</p>
+      <p className="box__product__price">{`R$ ${plate.price}`}</p>
       <ion-icon name="checkmark-circle"></ion-icon>
     </button>
   );

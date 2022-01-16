@@ -1,72 +1,64 @@
-.tela {
-  height: 100%;
+.pageOrder {
   width: 100%;
-
+  min-height: 100vh;
   background-color: rgba(255, 255, 255, 0.9);
+  padding: 0 18px;
 
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 
   position: fixed;
-  bottom: 0;
+  z-index: 3;
   top: 0;
-  z-index: 4;
-}
 
-.tela .confirm {
-  height: 33.33%;
-  width: 85.3%;
-  border-radius: 9px;
-  padding: 1.31rem 1.6rem 0 1.6rem;
+  &__box {
+    width: 100%;
+    height: 353px;
+    padding: 21px 25px 18px 25px;
 
-  font: var(--font-name);
-  color: var(--color-white);
+    background-color: #50d074;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 9px;
+    text-align: center;
 
-  background: #50d074;
-  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
-}
+    font-family: Roboto;
+    font-size: 22px;
+    color: white;
 
-.tela .confirm .header {
-  font-size: 1.375rem;
-  font-weight: normal;
+    display: grid;
+    gap: 5px;
 
-  text-align: center;
-}
+    &__title {
+      font-weight: bold;
+    }
 
-.button-1,
-.button-2 {
-  display: flex;
-  justify-content: center;
-}
+    &__order {
+      display: flex;
+      justify-content: space-between;
+    }
 
-.tela .confirm .ok {
-  width: 79.66%;
-  height: 3.25rem;
-  margin-top: 1.5rem;
-  border-radius: 100px;
-  border: none;
-  background: #ffffff;
+    &__total {
+      display: flex;
+      justify-content: space-between;
+      font-weight: bold;
+    }
 
-  font: var(--font-name);
-  font-size: 1.375rem;
-  font-weight: normal;
-  color: #50d074;
-}
+    button {
+      border: none;
+      font-size: 18px;
+      font-weight: bold;
+    }
 
-.tela .confirm .cancel {
-  margin-top: 0.5rem;
+    &__button {
+      background-color: white;
+      border-radius: 100px;
+      color: #50d074;
+    }
 
-  font: var(--font-name);
-  color: var(--color-white);
-  border: none;
-  background-color: #50d074;
-}
-
-.tela {
-  visibility: hidden;
-}
-
-.show {
-  visibility: visible;
+    &__cancel {
+      background: none;
+      color: white;
+    }
+  }
 }
