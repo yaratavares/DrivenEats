@@ -1,8 +1,6 @@
 import { useContext } from "react";
 import { Order } from "../../../common/context/Order";
 
-import image from "../../../common/img/frango_yin_yang 1.jpg";
-
 export default function Plates({
   plate,
   index,
@@ -23,9 +21,7 @@ export default function Plates({
       ...order,
       [type]: { order: true, name: plate.name, price: plate.price, index },
     });
-    console.log(order);
   }
-  console.log(indexClicks);
 
   return (
     <button
@@ -33,9 +29,8 @@ export default function Plates({
         indexClicks.includes(index) ? "box__product__select" : ""
       }`}
       onClick={clickProduct}
-      key={index}
     >
-      <img src={image} />
+      <img src={plate.image} alt={`prato ${plate.name}`} />
       <p className="box__product__name">{plate.name}</p>
       <p className="box__product__description">{plate.description}</p>
       <p className="box__product__price">{plate.price}</p>

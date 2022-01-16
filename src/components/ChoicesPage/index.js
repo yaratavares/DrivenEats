@@ -17,8 +17,9 @@ export default function ChoicesPages() {
         <div className="page__list">
           {listPlate.map((plate, index) => (
             <Plates
-              plate={plate}
+              key={"A" + index}
               index={"A" + index}
+              plate={plate}
               type={"plate"}
               indexClicks={indexClicks}
               setIndexClicks={setIndexClicks}
@@ -31,8 +32,9 @@ export default function ChoicesPages() {
         <div className="page__list">
           {listDrink.map((drink, index) => (
             <Plates
-              plate={drink}
+              key={"B" + index}
               index={"B" + index}
+              plate={drink}
               type={"drink"}
               indexClicks={indexClicks}
               setIndexClicks={setIndexClicks}
@@ -45,8 +47,9 @@ export default function ChoicesPages() {
         <div className="page__list">
           {listDeserve.map((deserve, index) => (
             <Plates
-              plate={deserve}
+              key={"C" + index}
               index={"C" + index}
+              plate={deserve}
               type={"deserve"}
               indexClicks={indexClicks}
               setIndexClicks={setIndexClicks}

@@ -23,6 +23,7 @@
     margin: 1rem 1rem 0 0;
     padding: 1rem 0.875rem;
     border-radius: 9px;
+    text-align: left;
 
     background-color: var(--color-white);
     border: none;
@@ -33,6 +34,14 @@
     justify-content: space-between;
 
     position: relative;
+
+    img {
+      width: 144px;
+      height: 87px;
+      border-radius: 4px;
+      object-fit: cover;
+      object-position: center;
+    }
 
     &__name {
       margin-top: 0.32rem;
