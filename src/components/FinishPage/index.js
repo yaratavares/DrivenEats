@@ -14,6 +14,12 @@ export default function FinishPage() {
   }
   calculo = eval(calculo).toFixed(2).replace(".", ",");
 
+  var mensage = encodeURIComponent(`Olá, gostaria de fazer o pedido:\n
+    - Prato: ${order.plate.name}\n
+    - Bebida: ${order.drink.name}\n
+    - Sobremesa: ${order.deserve.name}\n
+    Total: R$ ${calculo}`);
+
   return (
     <div className="pageOrder">
       <div className="pageOrder__box">
@@ -35,9 +41,12 @@ export default function FinishPage() {
           <p>TOTAL</p>
           <p>{`R$ ${calculo}`}</p>
         </div>
-        <button className="pageOrder__box__button">
+        <a
+          className="pageOrder__box__button"
+          href={`https://wa.me/5581989744485?text=${mensage}`}
+        >
           Tudo certo, pode pedir!
-        </button>
+        </a>
         <button
           className="pageOrder__box__cancel"
           onClick={() => setConfirmOrder(false)}

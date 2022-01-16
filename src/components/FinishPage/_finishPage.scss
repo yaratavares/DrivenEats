@@ -1,12 +1,10 @@
 .pageOrder {
   width: 100%;
   min-height: 100vh;
-  background-color: rgba(255, 255, 255, 0.9);
-  padding: 0 18px;
+  background-color: $background09;
+  padding: 0 1.125rem;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @include flxContent;
 
   position: fixed;
   z-index: 3;
@@ -14,51 +12,50 @@
 
   &__box {
     width: 100%;
-    height: 353px;
-    padding: 21px 25px 18px 25px;
+    height: 22.0625rem;
+    padding: 1.3125rem 1.5625rem 1.125rem 1.5625rem;
 
-    background-color: #50d074;
+    background-color: $colortelaconfirm;
     box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.25);
-    border-radius: 9px;
+    border-radius: 0.5625rem;
     text-align: center;
 
-    font-family: Roboto;
-    font-size: 22px;
-    color: white;
+    font: 400 1.375rem "Roboto", sans-serif;
+    color: $white;
 
     display: grid;
-    gap: 5px;
+    gap: 0.3125rem;
 
     &__title {
       font-weight: bold;
     }
 
     &__order {
-      display: flex;
+      @include flxContent;
       justify-content: space-between;
     }
 
     &__total {
-      display: flex;
+      @include flxContent;
       justify-content: space-between;
       font-weight: bold;
     }
 
-    button {
-      border: none;
-      font-size: 18px;
-      font-weight: bold;
-    }
-
     &__button {
-      background-color: white;
-      border-radius: 100px;
-      color: #50d074;
+      @include flxContent;
+      background-color: $white;
+      border-radius: 6.25rem;
+
+      font: 700 1.125rem "Roboto", sans-serif;
+      color: $colortelaconfirm;
     }
 
     &__cancel {
+      border: none;
       background: none;
-      color: white;
+
+      font: 700 1.125rem "Roboto", sans-serif;
+      color: $white;
     }
   }
 }
